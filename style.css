@@ -221,19 +221,22 @@ a, button, input {
   text-align: center;
 }
 
-.new__wrapper{
+.new__wrapper,
+.catalog__grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media all and (max-width: 1240px) {
-  .new__wrapper{
+  .new__wrapper,
+  .catalog__grid{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media all and (max-width: 800px) {
-  .new__wrapper{
+  .new__wrapper,
+  .catalog__grid{
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -244,7 +247,8 @@ a, button, input {
   align-items: center;
 }
 
-.new__wrapper img{
+.new__wrapper img,
+.catalog__grid-item img{
   max-width: 370px;
 }
 
